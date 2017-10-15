@@ -62,8 +62,8 @@ Now start the api with the php web server on port 8003
 php -S localhost:8003
 ```
 
-navigate to the [html file](https://github.com/Raat/fetch/blob/master/public/index.html) in the public folder and open it in your browser.
-
+navigate to the [html file](/fetch/blob/master/public/index.html) in the public folder and open it in your browser.
+![screenshot of the product list](/screenshot.png?raw=true "Preview")
 
 * [slim](https://www.slimframework.com/) - A micro framework for php
 * [babel-loader](https://github.com/babel/babel-loader) - This package allows transpiling JavaScript files using Babel and webpack.
