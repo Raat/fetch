@@ -1,0 +1,49 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "description": "Simple example of a fetch request with ES7 Async/Await",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raat/fetch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raat/fetch/issues"
+  },
+  "homepage": "https://github.com/Raat/fetch#readme",
+  "dependencies": {
+    "babel-plugin-syntax-async-functions": "^6.1.4",
+    "babel-plugin-transform-regenerator": "^6.1.4",
+    "babel-polyfill": "^6.1.4",
+    "babel-preset-es2015": "^6.1.4",
+    "request": "^2.65.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "webpack": "^3.7.1",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "globals": [
+      "document",
+      "fetch"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "camelCase"
+        }
+      ]
+    }
+  }
+}
