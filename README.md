@@ -4,27 +4,28 @@ Simple example of a fetch request with ES7 Async/Await
 
 ## Getting Started
 
-This project aims to use only pure javascript for the frontend. It is compiled with webpack and the babel-loader plugin to es2015. 
+This project aims to use only pure javascript for the frontend. There are no extra libraries used it only uses polyfills to support older browsers.
+In the folder server is a small php project that serves a simple api with 1 endpoint.
 
 ### Prerequisites
 
 Make sure that your node and npm version are up to date.
 
-Install the latest npm version
+Install the latest npm version:
 ```
 npm install npm@latest -g
 
 ```
 
-Install the latest node version
+Install the latest node version:
 ```
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 ```
 
-For the server that will serve a simple api endpoint you need to have php installed
-For mac this can be done by using brew
+For the php project you need to have php installed on you machine.
+For mac this can be done by using brew:
 
 ```
 brew tap homebrew/homebrew-php
