@@ -1,5 +1,6 @@
+import { productListClass } from '../actions';
+// eslint-disable-next-line no-unused-vars
 import styles from './productList.css';
-import {productListClass} from '../actions';
 
 export default () => `
     <div class="mat_list_title">
@@ -9,4 +10,3 @@ export default () => `
       <li>No products available. Click the button to load products.</li>
     </ul>
 `;
-

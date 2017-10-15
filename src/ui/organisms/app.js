@@ -1,5 +1,5 @@
-import {productList} from '../molecules';
-import {button, loader} from '../atoms';
+import { productList } from '../molecules';
+import { button, loader } from '../atoms';
 import style from './app.css';
 
 export default () => `

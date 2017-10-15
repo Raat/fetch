@@ -1,4 +1,4 @@
 import button from './button';
 import loader from './loader';
 
-export {loader, button};
+export { loader, button };
