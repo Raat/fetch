@@ -14,7 +14,6 @@ Make sure that your node and npm version are up to date.
 Install the latest npm version:
 ```
 npm install npm@latest -g
-
 ```
 
 Install the latest node version:
