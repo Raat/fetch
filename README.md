@@ -67,6 +67,7 @@ navigate to the [html file](/fetch/blob/master/public/index.html) in the public 
 You should see something like this:
 ![screenshot of the product list](/screenshot.png?raw=true "Preview")
 
+### Built With
 * [slim](https://www.slimframework.com/) - A micro framework for php
 * [babel-loader](https://github.com/babel/babel-loader) - This package allows transpiling JavaScript files using Babel and webpack.
 * [webpack](https://webpack.js.org/) - Bundel your scripts
