@@ -67,5 +67,9 @@ navigate to the [html file](https://github.com/Raat/fetch/blob/master/public/ind
 * [slim](https://www.slimframework.com/) - A micro framework for php
 * [babel-loader](https://github.com/babel/babel-loader) - This package allows transpiling JavaScript files using Babel and webpack.
 * [webpack](https://webpack.js.org/) - Bundel your scripts
+* [xo-linter](https://github.com/sindresorhus/xo) - Simple js linter
+* [stylelint](https://stylelint.io/) - Simple style linter
+
+
 
 
