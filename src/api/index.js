@@ -1,3 +1,3 @@
-import getProducts from './getProducts';
+import doProductsRequest from './doProductsRequest';
 
-export {getProducts};
+export {doProductsRequest};

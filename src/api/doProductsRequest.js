@@ -5,7 +5,7 @@ function timeout(ms) {
 
 export default async () => {
 	await timeout(3000);
-    // Await response of fetch call
+  // Await response of fetch call
 	const response = await fetch(PRODUCT_LIST_URL);
 	console.log(response);
     // Only proceed once promise is resolved
