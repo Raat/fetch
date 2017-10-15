@@ -1,8 +1,8 @@
-import { productListClass } from '../actions';
+import {productListClass} from '../actions';
 // eslint-disable-next-line no-unused-vars
 import styles from './productList.css';
 
-export default () => `
+export default() => `
     <div class="mat_list_title">
       <h1>Product list</h1>
     </div>

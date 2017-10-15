@@ -20,8 +20,8 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-        {loader: 'style-loader'},
-        {loader: 'css-loader'}
+					{loader: 'style-loader'},
+					{loader: 'css-loader'}
 				]
 			}
 
@@ -29,8 +29,24 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': '"production"',
 			PRODUCT_LIST_URL: JSON.stringify('http://localhost:8003/products'),
 			CURRENCY: JSON.stringify('€'),
 			NAMESPACE: JSON.stringify('APP')
-		})]
+		}),
+		new webpack.optimize.UglifyJsPlugin({
+			mangle: true,
+			compress: {
+				warnings: false, // Suppress uglification warnings
+				pure_getters: true, // eslint-disable-line camelcase
+				unsafe: true, // eslint-disable-line camelcase
+				unsafe_comps: true, // eslint-disable-line camelcase
+				screw_ie8: true // eslint-disable-line camelcase
+			},
+			output: {
+				comments: false
+			},
+			exclude: [/\.min\.js$/gi] // Skip pre-minified libs
+		})
+	]
 };
