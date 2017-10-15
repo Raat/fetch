@@ -18,7 +18,7 @@ $app->add(function ($req, $res, $next) {
 
 // return list of products
 $app->get('/products', function ($request, $response, $args) {
-    $product1 = array('name' => 'Laptop', 'price' => 499);
+    $product1 = array('name' => 'Laptop', 'price' => rand(10,100));
     $product2 = array('name' => 'Macbook', 'price' => 400);
     $product3 = array('name' => 'Iphone', 'price' => 100);
     $data = array($product1, $product2, $product3);

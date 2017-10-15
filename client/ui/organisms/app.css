@@ -26,16 +26,12 @@ p, a, h1{
   max-width:400px;
   margin:auto;
   padding:20px;
-  min-height:400px;
   margin-top:40px;
   margin-bottom:40px;
   position:relative;
 }
 
-.button-wrapper {
-  position:absolute;
-  bottom:20px;
-  text-align:center;
-  left:0;
-  right:0;
+.card .mat_list {
+  margin-top:40px;
+  margin-bottom:40px;
 }

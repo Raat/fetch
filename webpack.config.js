@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: './client/index.js',
 	output: {
 		filename: 'scripts.js',
 		path: path.resolve(__dirname, './public/js/')
@@ -21,7 +22,8 @@ module.exports = {
 				test: /\.css$/,
 				use: [
 					{loader: 'style-loader'},
-					{loader: 'css-loader'}
+					{loader: 'css-loader'},
+					{loader: 'postcss-loader'}
 				]
 			}
 
@@ -47,6 +49,7 @@ module.exports = {
 				comments: false
 			},
 			exclude: [/\.min\.js$/gi] // Skip pre-minified libs
-		})
+		}),
+		new StyleLintPlugin()
 	]
 };
