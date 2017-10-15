@@ -62,7 +62,9 @@ Now start the api with the php web server on port 8003
 php -S localhost:8003
 ```
 
-navigate to the [html file](/fetch/blob/master/public/index.html) in the public folder and open it in your browser.
+navigate to the [html file](/fetch/blob/master/public/index.html) in the public folder and open it in your browser. 
+
+You should see something like this:
 ![screenshot of the product list](/screenshot.png?raw=true "Preview")
 
 * [slim](https://www.slimframework.com/) - A micro framework for php
