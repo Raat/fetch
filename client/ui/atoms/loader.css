@@ -4,7 +4,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .loader {
@@ -20,6 +21,7 @@
   left: 50%;
   margin-left: -40px;
   margin-top: -40px;
+  z-index: 9999;
 }
 
 @keyframes spin {
@@ -33,5 +35,5 @@
 }
 
 .show-loader .loader-wrapper {
-  display: block;
+  opacity: 1;
 }
