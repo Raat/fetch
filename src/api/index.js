@@ -1,3 +1,3 @@
 import doProductsRequest from './doProductsRequest';
 
-export {doProductsRequest};
+export {doProductsRequest}; // eslint-disable-line import/prefer-default-export

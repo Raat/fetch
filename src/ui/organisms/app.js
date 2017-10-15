@@ -1,11 +1,16 @@
 import {productList} from '../molecules';
-import {button} from '../atoms';
+import {button, loader} from '../atoms';
+import style from './app.css';
 
-const markup = `
+export default () => `
   <div class="container">
-    ${productList}
-    ${button}
+    <div class="card">
+      ${loader()}
+      ${productList()}
+        <div class="button-wrapper">
+          ${button()}
+        </div>
+      </div>
+    </div>
   </div>
 `;
-
-export default markup;

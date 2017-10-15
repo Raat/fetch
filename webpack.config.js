@@ -15,11 +15,22 @@ module.exports = {
 				use: {
 					loader: 'babel-loader'
 				}
+			},
+
+			{
+				test: /\.css$/,
+				use: [
+        {loader: 'style-loader'},
+        {loader: 'css-loader'}
+				]
 			}
+
 		]
 	},
 	plugins: [
 		new webpack.DefinePlugin({
-			PRODUCT_LIST_URL: JSON.stringify('http://localhost:8003/products')
+			PRODUCT_LIST_URL: JSON.stringify('http://localhost:8003/products'),
+			CURRENCY: JSON.stringify('€'),
+			NAMESPACE: JSON.stringify('APP')
 		})]
 };

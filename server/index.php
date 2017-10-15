@@ -16,8 +16,12 @@ $app->add(function ($req, $res, $next) {
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 });
 
+// return list of products
 $app->get('/products', function ($request, $response, $args) {
-  $data = array('name' => 'Laptop', 'price' => 400);
+  $product1 = array('name' => 'Laptop', 'price' => 499);
+  $product2 = array('name' => 'Macbook', 'price' => 400);
+  $product3 = array('name' => 'Iphone', 'price' => 100);
+  $data = array($product1, $product2, $product3);
   $response->withJson($data, 201);
   return $response->withJson($data, 201);
 });
